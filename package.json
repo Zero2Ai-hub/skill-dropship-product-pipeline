@@ -1,0 +1,19 @@
+{
+  "name": "skill-dropship-product-pipeline",
+  "version": "1.0.0",
+  "description": "Full dropship product lifecycle: CJ sourcing → Flux hero → WooCommerce → Kling video → EN/AR captions",
+  "main": "scripts/pipeline.js",
+  "scripts": {
+    "start": "node scripts/pipeline.js",
+    "dry-run": "node scripts/pipeline.js --dry-run"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "notes": {
+    "python-deps": "Handled via `uv run --with` at runtime. No npm install needed.",
+    "python-packages": ["fal-client", "moviepy", "pillow", "arabic-reshaper", "python-bidi"]
+  }
+}
